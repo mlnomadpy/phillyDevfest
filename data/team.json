@@ -1,0 +1,38 @@
+[   
+    {
+        "name": "Arpit Mathur",
+        "title": "Director of Software Engineering, Comcast",
+        "favorite_dinosaur": "Grimlock",
+        "linkedin": "https://www.linkedin.com/in/arpitm/",
+        "bluesky":"@arpitonline.com",
+        "bio": "Software engineering at Comcast, passionate about mobile, full-stack, Flutter and Web3. Appreciator of art, food and a good book :)",
+        "pic_link": ""
+    },
+    {
+        "name": "Farzad Barzin",
+        "title": "Software Engineer at BEX Realty",
+        "favorite_dinosaur": "The Swimming Spinosaurus",
+        "linkedin": "https://www.linkedin.com/in/farzad-barzin/",
+        "bio": "I build stuff with Flutter, NextJS, NestJS, and other toys",
+        "pic_link": ""
+    },
+    {
+        "name": "layla bouzoubaa",
+        "title": "phd candidate, information science, stigma, substance use, and technology use",
+        "favorite_dinosaur": "barney",
+        "twitter": "",
+        "bio": "phding for the foreseeable future, wines and books on the side",
+        "bluesky": "laylab.bsky.social",
+        "pic_link": ""
+    },
+    {
+        "name": "taha bouhsine",
+        "title": "chillEO @mlnomads / ai google develoepr expert",
+        "favorite_dinosaur": "hatty pachycephalosaurus",
+        "pic_link": "",
+        "twitter": "",
+        "bio": "a sarcastic soul from the dunes of Morocco"
+    }
+
+
+]

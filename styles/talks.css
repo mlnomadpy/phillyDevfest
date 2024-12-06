@@ -1,0 +1,284 @@
+.talks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    padding-top: 60px; /* Add padding for navbar */
+}
+
+.talk-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(244, 165, 96, 0.2);
+}
+
+.talk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(244, 165, 96, 0.2);
+    border-color: var(--accent-color);
+}
+
+.talk-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.talk-card h3 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.talk-card p {
+    color: var(--primary-text);
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.talk-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center; /* Change from flex-end to center */
+    z-index: 1001; /* Ensure it's above navbar */
+    overflow: auto; /* Allow scrolling if necessary */
+    cursor: pointer; /* Show pointer on clickable area */
+    padding: 20px 0; /* Add some vertical padding */
+}
+
+.talk-content.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+    align-items: center; /* Center the content vertically */
+}
+
+.talk-overlay {
+    background: var(--primary-bg);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 90%;
+    max-height: calc(100vh - 40px); /* Give more vertical space */
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid var(--accent-color);
+    cursor: default;
+    margin: 0; /* Remove margin */
+    animation: slideUp 0.3s ease forwards;
+    transform-origin: bottom;
+}
+
+/* Add this rule to ensure the scroll bar is rounded */
+.talk-overlay::-webkit-scrollbar {
+    width: 12px;
+}
+
+.talk-overlay::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 20px; /* Match the container's rounded edges */
+}
+
+.talk-overlay::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Match the container's rounded edges */
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: var(--accent-color);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    z-index: 1002; /* Ensure close button is above both navbar and talk content */
+}
+
+.close-btn:hover {
+    background: rgba(244, 165, 96, 0.2);
+}
+
+.video-container, .slides-container {
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .slides-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.kaggle-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: var(--primary-bg);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.kaggle-link:hover {
+    background: var(--hover-bg);
+}
+
+h2.collapsed {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid rgba(244, 165, 96, 0.2);
+    transition: background 0.3s ease;
+}
+
+h2.collapsed:hover {
+    background: rgba(244, 165, 96, 0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .talks-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        padding-top: 60px; /* Keep padding for navbar on mobile */
+        gap: 15px;
+    }
+
+    .talk-content {
+        padding: 0;
+        left: 0;
+        right: 0;
+        width: 100vw; /* Use viewport width */
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    .talk-overlay {
+        padding: 15px;
+        width: 100%;
+        max-height: calc(100vh - 90px); /* Ensure it fits within the viewport */
+        margin: 70px 0 0 0; /* Only keep top margin for navbar */
+        border-radius: 0;
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        padding-bottom: 20px; /* Ensure content is accessible */
+        box-sizing: border-box;
+        animation: slideUp 0.3s ease forwards;
+    }
+
+    .talk-content.active {
+        display: flex;
+        animation: slideUp 0.3s ease;
+        align-items: flex-start;
+        overflow-x: hidden;
+        width: 100vw;
+        max-width: 100vw;
+        position: fixed; /* Keep it fixed */
+        overflow: auto; /* Allow scrolling if necessary */
+    }
+
+    .close-btn {
+        position: fixed;
+        top: 70px; /* Position below navbar */
+        right: 15px;
+        z-index: 1002;
+        background: rgba(65, 44, 15, 0.95); /* More opaque background */
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--accent-color);
+    }
+
+    .talk-overlay h2 {
+        margin-top: 60px; /* Increased to avoid navbar overlap */
+        padding-right: 40px;
+        font-size: 1.5rem;
+    }
+
+    .video-container, 
+    .slides-container {
+        margin: 15px 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .talk-overlay {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .talk-card h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .talk-card {
+        padding: 12px;
+        margin: 0;
+    }
+
+    .talk-overlay {
+        padding: 12px;
+        padding-bottom: 20px; /* Ensure content is accessible */
+        padding-top: 70px; /* Space for navbar */
+        margin-bottom: 0;
+        max-height: calc(100vh - 90px); /* Ensure it fits within the viewport */
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    .video-container,
+    .slides-container {
+        margin: 10px -12px; /* Negative margin to counter parent padding */
+        width: calc(100% + 24px); /* Compensate for parent padding */
+    }
+}
+

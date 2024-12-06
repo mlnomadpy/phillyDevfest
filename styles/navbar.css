@@ -1,0 +1,137 @@
+.navbar {
+  display: flex; 
+  justify-content: space-around;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-bg);
+  opacity: 0.7;
+}
+
+.navbar::after, .navbar::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 0.5px;
+  background-color: white;
+  width: 50%;
+}
+
+.navbar::before {
+  left: 0;
+  width: calc(50% - (100% / (2 * 7)));
+}
+
+.navbar::after {
+  right: 0;
+  width: calc(50% - (100% / (2 * 7)));
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar a.active {
+  background-color: var(--accent-color);
+  color: var(--primary-bg);
+}
+
+.navbar a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-bg);
+}
+
+.navbar a i {
+  font-size: 20px;
+}
+
+.navbar .home {
+  padding: 0 15px;
+}
+
+.navbar .home i {
+  font-size: 24px;
+}
+
+/* Mobile navigation styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar a:not(#home-link) {
+    display: flex;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .navbar a i {
+    font-size: 24px;
+  }
+
+  .navbar.responsive {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 5px;
+    position: fixed;
+    background-color: var(--primary-bg);
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+
+  .navbar.responsive a {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .navbar .home {
+    display: flex !important;
+  }
+}
+
+/* Logo styles */
+.nav-logo {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#home-link {
+  margin-bottom: -50px;
+}

@@ -1,0 +1,57 @@
+:root {
+  --primary-bg: #412c0f;
+  --primary-text: white;
+  --accent-color: rgb(244, 165, 96);
+  --hover-bg: #b08a68; /* New variable for hover background color */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+p img {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  p img {
+    flex: 0 0 auto;
+    order: 2;
+  }
+  
+  p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767px) {
+  p img {
+    width: 100%;
+    max-width: 100%;
+    order: 1;
+  }
+  
+  p {
+    flex-direction: column;
+  }
+}

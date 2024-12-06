@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Include D3.js -->
+    <title>DevFest 2024 Google Developer Group Philadelphia</title>
+    <style></style>
+    <meta name="description" content=".">
+    <meta name="keywords" content="DevFest, Google, Developer, Groups, Android">
+    <meta name="author" content="Taha Bouhsine">
+    <meta property="og:title" content="DevFest 2024 Philadelphia">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="path/to/image.jpg">
+    <meta property="og:url" content="https://devfest24.gdgphilly.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "DevFest 2024",
+      "jobTitle": "Tech, Google, Fun, Food",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "GDG Philly"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "PA",
+        "addressRegion": "USA"
+      },
+      "sameAs": [
+        "https://twitter.com/gdgphilly",
+        "https://instagram.com/gdgphilly",
+        "https://linkedin.com/in/tahabsn"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#meet" class="nav-link" data-section="meet">
+        <i class="fas fa-user"></i>
+        <span class="nav-text">Agenda</span>
+      </a>
+      <a href="#faq" class="nav-link" data-section="faq">
+        <i class="fas fa-heart"></i>
+        <span class="nav-text">FAQ</span>
+      </a>
+      <a href="#sponsors" class="nav-link" data-section="sponsors">
+        <i class="fas fa-feather-alt"></i>
+        <span class="nav-text">sponsors</span>
+      </a>
+      <a href="#" class="nav-link home" id="home-link">
+        <i class="fas fa-home"></i>
+      </a>
+
+      <a href="#tracks" class="nav-link" data-section="tracks">
+        <i class="fas fa-blog"></i>
+        <span class="nav-text">tracks</span>
+      </a>
+      <a href="#talks" class="nav-link" data-section="talks">
+        <i class="fas fa-microphone"></i>
+        <span class="nav-text">talks</span>
+      </a>
+      <a href="#contact" class="nav-link" data-section="contact">
+        <i class="fas fa-flask"></i>
+        <span class="nav-text">contact us</span>
+      </a>
+    </div>
+    <div class="hero-sec">
+      <video id="bg-video" autoplay muted loop>
+        <source src="imgs/bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="circle-container">
+        <div class="circle-text">
+          <h1>DevFest 2024 Philly</h1>
+          <h2>January, 12th 2025</h2>
+          <div class="social-icons">
+            <a href="https://twitter.com/gdgphilly" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://instagram.com/gdgphilly" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://linkedin.com/in/gdgphilly" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <a href="https://gdg.community.dev/events/details/google-gdg-philadelphia-presents-gdg-philly-devfest-2025/" class="join-btn">register NOW!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="meet section" id="meet">
+      <!-- injecting content from aboutme.html -->
+    </div>
+
+    <div class="faq section" id="faq"></div>
+
+    <div class="sponsors section" id="sponsors"></div>
+
+    <div class="tracks section" id="tracks"></div>
+
+    <div class="talks section" id="talks">
+      <div class="section-content">
+        <h1>talks</h1>
+        <div class="content-container">
+          <div class="talks-container">
+            <!-- Talks will be loaded here -->
+          </div>
+        </div>
+        <div class="talk-content"></div>
+      </div>
+    </div>
+
+    <div class="research section" id="research"></div>
+
+    <script type="module">
+        import Portfolio from './js/app.js';
+        import VideoEffects from './js/effects.js';
+        
+        // Make VideoEffects available globally for the onclick handler
+        window.VideoEffects = VideoEffects;
+        // Initialize the application
+        Portfolio.init();
+    </script>
+    <script src="talks.js"></script>
+  </body>
+</html>

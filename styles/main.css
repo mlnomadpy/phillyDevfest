@@ -1,0 +1,19 @@
+
+@import 'variables.css';
+@import 'navbar.css';
+@import 'hero.css';
+@import 'sections.css';
+@import 'talks.css';
+@import 'utils.css';
+
+h1 {
+    display: inline-block;
+    padding-right: 5px;
+    border-right: 10px solid #fff;
+    animation: blink 1s infinite;
+    @media screen and (max-width: 370px) {
+      font-size: 5vw;
+      border-right: 4px solid #fff;
+    }
+  }
+  

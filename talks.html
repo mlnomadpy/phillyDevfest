@@ -1,0 +1,24 @@
+<div class="section-content">
+  <h1>talks</h1>
+  <div class="content-container">
+    <div class="talks-container">
+      <!-- Talks will be loaded here -->
+    </div>
+  </div>
+  <div class="talk-content"></div>
+</div>
+<script src="talks.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const talksSection = document.getElementById('talks');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          loadTalks();
+          observer.disconnect();
+        }
+      });
+    });
+    observer.observe(talksSection);
+  });
+</script>

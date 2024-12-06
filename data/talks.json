@@ -1,0 +1,44 @@
+[
+    {
+        "title": "ML Ascent 3 - A Hands-on Workshop on Representation Learning for Computer Vision Using Keras and TensorFlow",
+        "organization": "@DevMENA",
+        "link": "https://www.youtube.com/embed/NlVOvrqz4tc",
+        "slides": "",
+        "type": "MLAscent",
+        "thumbnail": "https://i.imgur.com/xtJhx5A.jpeg",
+        "description": ".",
+        "kaggle_notebook":"",
+        "github_gist": "<script src='https://gist.github.com/skywolfmo/2e6d605ae4083b185d06975d5c28c35f.js'></script>" 
+
+    },
+    {
+        "title": "ML Ascent 2 - Representation Learning Computer Vision",
+        "organization": "@DevMENA",
+        "link": "https://www.youtube.com/embed/wJm57WV7uOE",
+        "slides": "",
+        "type": "MLAscent",
+        "thumbnail": "https://i.ytimg.com/vi/wJm57WV7uOE/maxresdefault.jpg",
+        "description": ".",
+        "kaggle_notebook":"https://www.kaggle.com/embed/skywolfmo/mlascent-2-cv-representation-learning"
+    },
+    {
+        "title": "MLAscent 1 - Pretraining Deep Learning Models Computer Vision",
+        "organization": "@DevMENA",
+        "link": "https://www.youtube.com/embed/LvhHWixMGxY",
+        "slides": "",
+        "type": "MLAscent",
+        "thumbnail": "https://i.imgur.com/AmMg4MN.png",
+        "description": ".",
+        "kaggle_notebook":"https://www.kaggle.com/embed/skywolfmo/mlascent-cv-pretraining-deep-learning-models?kernelSessionId=158069817"
+    },
+    {
+        "title": "ML in Depth - Picture-Perfect Phrases Contrastive Learning in AI Visual-Language Alignment",
+        "organization": "@DevMENA",
+        "link": "https://www.youtube.com/embed/r4_GOafHFrU",
+        "slides": "https://docs.google.com/presentation/d/e/2PACX-1vTsLQqY3haQRUDwhczQa_PqQED9d23dIMbGXfkFttmEZNAoZRhclk2x2IbD1K_Q1MZBBNNaFCJprU4b/embed?start=false&loop=false&delayms=3000",
+        "type": "MLinDepth",
+        "thumbnail": "https://i.imgur.com/uC9bqDO.png",
+        "description": "🚀 Explore the frontier of AI with 'Picture-Perfect Phrases: Contrastive Learning in AI's Visual-Language Alignment,' a technical deep-dive into the integration of vision and language models. 🧠💻<br>In this talk, we dissect the sophisticated application of contrastive learning in bridging the gap between visual data and natural language processing. Leveraging the CIFAR-10 dataset, we demonstrate the training of a ResNet model enhanced by linguistic context through dynamically generated phrase templates. <br><br>Key Highlights:<br>- CIFAR-10 Dataset Analysis: An in-depth examination of CIFAR-10's image classes and their suitability for contrastive learning in vision-language tasks. <br>- BERT for Phrase Encoding: Technical insights into utilizing a pre-trained BERT model for converting descriptive phrases into meaningful encodings, facilitating a multimodal learning approach. <br>- ResNet Architecture Customization: Detailed exploration of adapting the ResNet model to align with the linguistic outputs of BERT, emphasizing the model architecture and output shape adjustments for effective contrastive learning. <br>- Contrastive Learning Mechanics: A comprehensive breakdown of the contrastive learning process, including the setup of loss functions, optimizers, and training strategies for minimizing the distance between image embeddings and text encodings. <br>- Training Progress and Metrics: An analytical view of training methodologies, including monitoring and visualizing loss and accuracy metrics during the model training phase. <br>- Embedding Generation and Clustering Analysis: Technical discussion on generating embeddings for test data using the trained model, followed by applying clustering techniques (like K-means) for evaluation and accuracy measurement of the model on unseen data. <br><br>This session is tailored for AI practitioners, data scientists, and researchers interested in the nuts and bolts of cutting-edge AI models. It's not just about building a model; it's about understanding the why and how behind each step, from data preprocessing to model evaluation.",
+        "kaggle_notebook":"https://www.kaggle.com/embed/skywolfmo/ml-in-depth-contrastive-learning-visual-language"
+    }
+]
