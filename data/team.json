@@ -1,12 +1,21 @@
 [   
     {
-        "name": "Arpit Mathur",
+        "name": "John Mahoney",
         "title": "Director of Software Engineering, Comcast",
+        "favorite_dinosaur": "Argentinosaurus",
+        "linkedin": "https://www.linkedin.com/in/jjmiv/",
+        "bluesky":"@ltzany.bsky.social",
+        "bio": "Software Engineer for Mobile CI/CD Team at Capital One.  Dad, Cat wrangler and I like video games, music and mechanical keyboards.",
+        "image": ""
+    },
+    {
+        "name": "Arpit Mathur",
+        "title": "Software Engineer at Capital One",
         "favorite_dinosaur": "Grimlock",
         "linkedin": "https://www.linkedin.com/in/arpitm/",
         "bluesky":"@arpitonline.com",
         "bio": "Software engineering at Comcast, passionate about mobile, full-stack, Flutter and Web3. Appreciator of art, food and a good book :)",
-        "pic_link": ""
+        "image": ""
     },
     {
         "name": "Farzad Barzin",
@@ -14,23 +23,23 @@
         "favorite_dinosaur": "The Swimming Spinosaurus",
         "linkedin": "https://www.linkedin.com/in/farzad-barzin/",
         "bio": "I build stuff with Flutter, NextJS, NestJS, and other toys",
-        "pic_link": ""
+        "image": ""
     },
     {
         "name": "layla bouzoubaa",
         "title": "phd candidate, information science, stigma, substance use, and technology use",
         "favorite_dinosaur": "barney",
-        "twitter": "",
         "bio": "phding for the foreseeable future, wines and books on the side",
         "bluesky": "laylab.bsky.social",
-        "pic_link": ""
+        "image": ""
     },
     {
         "name": "taha bouhsine",
         "title": "chillEO @mlnomads / ai google develoepr expert",
         "favorite_dinosaur": "hatty pachycephalosaurus",
-        "pic_link": "",
-        "twitter": "",
+        "image": "imgs/team/taha.jpeg",
+        "twitter": "https://twitter.com/Tahabsn",
+        "linkedin": "https://www.linkedin.com/in/tahabsn/",
         "bio": "a sarcastic soul from the dunes of Morocco"
     }
 

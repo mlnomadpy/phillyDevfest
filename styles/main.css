@@ -5,6 +5,7 @@
 @import 'sections.css';
 @import 'talks.css';
 @import 'utils.css';
+@import 'contact.css';
 
 h1 {
     display: inline-block;

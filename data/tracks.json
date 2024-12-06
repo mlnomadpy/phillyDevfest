@@ -2,22 +2,22 @@
     {
         "title": "Artificial Intelligence",
         "type": "Machine Learning",
-        "thumbnail": "https://i.imgur.com/xtJhx5A.jpeg",
-        "description": "."
+        "thumbnail": "https://lh3.googleusercontent.com/eO15LnFfFD9ECIPAuGsimtAJM04IrdnfSlWJKkZI-isxN38Cxu4HwwWqP_3kYUTGyqWVKujUV0Dh9qLCyNeS1azfe02E4KzqttY3eg",
+        "description": "Artificial Intelligence is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction. Some of the applications of AI include expert systems, speech recognition, and machine vision."
 
     },
     {
         "title": "Android",
         "type": "Software Engineering",
-        "thumbnail": "https://i.imgur.com/xtJhx5A.jpeg",
-        "description": "."
+        "thumbnail": "https://lh3.googleusercontent.com/o0MOZzA2zb4uMQBqN5DqD4_dfQt5xCTOILfocK5c4srpbH2sCQB4Et78BPCBI3eaelffxzWESpkYUxdL6821oTmIo6Vx10zQCDTIbl8D3fBUEbmfWzIl",
+        "description": "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google."
 
     },
     {
         "title": "Flutter",
         "type": "Software Engineering",
-        "thumbnail": "https://i.imgur.com/xtJhx5A.jpeg",
-        "description": "."
+        "thumbnail": "https://lh3.googleusercontent.com/5_Jv6g9l2OSa_xKX89kk1TcIfRjvl4jAepvQ3V6yf0A81TZLGWeGMe3vaj0bVMNzssvZQ2Iehq0YEjPgg2XkpsoYjIJerQ65CHzPWiU",
+        "description": "Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web."
 
     }
 ]

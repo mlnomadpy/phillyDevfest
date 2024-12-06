@@ -1,24 +1,9 @@
 <div class="section-content">
   <h1>faq</h1>
   <div class="content-container">
-    <div class="talks-container">
-      <!-- Talks will be loaded here -->
+    <div class="faq-container">
+      <!-- FAQs will be loaded here by faq.js -->
     </div>
   </div>
-  <div class="talk-content"></div>
 </div>
-<script src="talks.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const talksSection = document.getElementById('talks');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          loadTalks();
-          observer.disconnect();
-        }
-      });
-    });
-    observer.observe(talksSection);
-  });
-</script>
+<script src="js/faq.js"></script>

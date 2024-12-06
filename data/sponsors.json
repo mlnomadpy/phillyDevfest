@@ -1,14 +1,14 @@
 [
     {
         "name": "Google",
-        "logo_url": "google"
+        "logo_url": " https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg",
+        "website": "https://www.google.com"
 
     },
     {
         "name": "Drexel",
-        "logo_url": "drexel url"
+        "logo_url": "https://drexel.edu/~/media/Images/cci/Logos/College_ComputingInformatics-oneline100height.ashx?h=100&w=642&hash=D90F61EEA050103F707D5EBAFEC93524C1C5C22A",
+        "website": "https://drexel.edu/cci/about/about-the-college/"
 
     }
-
-
 ]

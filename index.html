@@ -20,35 +20,38 @@
     <!-- Include D3.js -->
     <title>DevFest 2024 Google Developer Group Philadelphia</title>
     <style></style>
-    <meta name="description" content=".">
-    <meta name="keywords" content="DevFest, Google, Developer, Groups, Android">
-    <meta name="author" content="Taha Bouhsine">
-    <meta property="og:title" content="DevFest 2024 Philadelphia">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="path/to/image.jpg">
-    <meta property="og:url" content="https://devfest24.gdgphilly.com">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="." />
+    <meta
+      name="keywords"
+      content="DevFest, Google, Developer, Groups, Android"
+    />
+    <meta name="author" content="Taha Bouhsine" />
+    <meta property="og:title" content="DevFest 2024 Philadelphia" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="path/to/image.jpg" />
+    <meta property="og:url" content="https://devfest24.gdgphilly.com" />
+    <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "DevFest 2024",
-      "jobTitle": "Tech, Google, Fun, Food",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "GDG Philly"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "PA",
-        "addressRegion": "USA"
-      },
-      "sameAs": [
-        "https://twitter.com/gdgphilly",
-        "https://instagram.com/gdgphilly",
-        "https://linkedin.com/in/tahabsn"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "DevFest 2024",
+        "jobTitle": "Tech, Google, Fun, Food",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "GDG Philly"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "PA",
+          "addressRegion": "USA"
+        },
+        "sameAs": [
+          "https://twitter.com/gdgphilly",
+          "https://instagram.com/gdgphilly",
+          "https://linkedin.com/in/tahabsn"
+        ]
+      }
     </script>
   </head>
   <body>
@@ -83,14 +86,16 @@
       </a>
     </div>
     <div class="hero-sec">
-      <video id="bg-video" autoplay muted loop>
+      <video id="bg-video" autoplay muted loop poster="imgs/thumbnail.png">
         <source src="imgs/bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div class="circle-container">
         <div class="circle-text">
           <h1>DevFest 2024 Philly</h1>
-          <h2>January, 12th 2025</h2>
+          <p style="text-align: center">
+            January, 12th 2025 <br />3675 market st. 10th floor, philadelphia
+          </p>
           <div class="social-icons">
             <a href="https://twitter.com/gdgphilly" target="_blank"
               ><i class="fab fa-twitter"></i
@@ -102,7 +107,11 @@
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </div>
-          <a href="https://gdg.community.dev/events/details/google-gdg-philadelphia-presents-gdg-philly-devfest-2025/" class="join-btn">register NOW!</a>
+          <a
+            href="https://gdg.community.dev/events/details/google-gdg-philadelphia-presents-gdg-philly-devfest-2025/"
+            class="join-btn"
+            >register NOW!</a
+          >
         </div>
       </div>
     </div>
@@ -111,7 +120,16 @@
       <!-- injecting content from aboutme.html -->
     </div>
 
-    <div class="faq section" id="faq"></div>
+    <div class="faq section" id="faq">
+    </div>
+
+    <div class="sponsors section" id="sponsors"></div>
+
+            <!-- FAQs will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="sponsors section" id="sponsors"></div>
 
@@ -129,17 +147,23 @@
       </div>
     </div>
 
-    <div class="research section" id="research"></div>
+    <div class="contact section" id="contact"></div>
 
     <script type="module">
-        import Portfolio from './js/app.js';
-        import VideoEffects from './js/effects.js';
-        
-        // Make VideoEffects available globally for the onclick handler
-        window.VideoEffects = VideoEffects;
-        // Initialize the application
-        Portfolio.init();
+      import Portfolio from "./js/app.js";
+      import VideoEffects from "./js/effects.js";
+
+      // Make VideoEffects available globally for the onclick handler
+      window.VideoEffects = VideoEffects;
+      // Initialize the application
+      Portfolio.init();
     </script>
-    <script src="talks.js"></script>
+    <script defer src="js/talks.js"></script>
+    <!-- Move sponsors.js here to ensure content is loaded first -->
+    <script defer src="js/sponsors.js"></script>
+    <script defer src="js/faq.js"></script>
+    <script defer src="js/contact.js"></script>
+    <script defer src="js/tracks.js"></script>
+
   </body>
 </html>
